@@ -23,13 +23,13 @@ This project demonstrates the use of SQL to query a media database using SQLite.
 8. What is the total length of each playlist in hours? List the playlist id and name of only those playlists that are longer than 2 hours, along with the length in hours rounded to two decimals.
 9. Creative addition: Determine the importance of each customer based on the total amount of money they have spent in the store, and include the Sales Support Agent who is responsible for each customer. Customers are ranked in five tiers:
 
-   | Tier    | Description                                |
-   | ------- | ------------------------------------------ |
-   | Diamond | Total amount spent is greater than top 10% |
-   | Tier 1  | Total amount spent is greater than top 20% |
-   | Tier 2  | Total amount spent is greater than top 30% |
-   | Tier 3  | Total amount spent is greater than top 50% |
-   | Tier 4  | The rest of the customers                  |
+   | Tier    | Description                                            |
+   | ------- | ------------------------------------------------------ |
+   | Diamond | Total amount spent is greater than or equal to top 10% |
+   | Tier 1  | Total amount spent is between top 10% and 20%          |
+   | Tier 2  | Total amount spent is between top 20% and top 30%      |
+   | Tier 3  | Total amount spent is between top 30% and top 50%      |
+   | Tier 4  | The rest of the customers                              |
 
 ---
 
