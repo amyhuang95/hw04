@@ -1,4 +1,4 @@
-# music-database
+# Media Database Queries
 
 This project demonstrates the use of SQL to query a media database using SQLite. The database used is the Chinook database provided by [SQLite Tutorial](https://www.sqlitetutorial.net/sqlite-sample-database/).
 
