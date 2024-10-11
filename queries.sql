@@ -112,7 +112,7 @@ SELECT
 		ELSE
 			'Tier 4'
 		END CustomerTier,
-	employees.FirstName || " " || employees.LastName EmployeeName,
+	employees.FirstName || " " || employees.LastName SalesSupportRepName,
 	customersRank.CustomerId, 
 	customersRank.AggTotal, 
 	ROUND(TotalPercRank, 2) TotalPercRank
