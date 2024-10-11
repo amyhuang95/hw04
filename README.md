@@ -5,10 +5,10 @@ This project demonstrates the use of SQL to query a media database using SQLite.
 ## How to run the queries:
 
 1. Download this repository.
-2. Run the following commands in the terminal of the directory where the repository is located:
+2. Run the following commands in the terminal of the directory where the repository is located. Change the query number in the command to run the desired query.
 
    ```bash
-   sqlite3 MediaDB.db < queries.sql
+   sqlite3 MediaDB.db < query1.sql
    ```
 
 ## Queries
