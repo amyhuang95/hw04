@@ -3,5 +3,5 @@ SELECT
     DISTINCT LastName, 
     Email
 FROM invoices
-LEFT JOIN customers
-    on invoices.CustomerId = customers.CustomerId;
+LEFT JOIN customers 
+    USING (CustomerId);

@@ -2,15 +2,15 @@
 SELECT DISTINCT artists.Name
 FROM artists
 INNER JOIN albums
-    ON artists.ArtistId = albums.ArtistId
+    USING(ArtistId)
 INNER JOIN tracks
-    ON tracks.AlbumId = albums.AlbumId
+    USING(AlbumId)
 INNER JOIN media_types
-    ON media_types.MediaTypeId = tracks.MediaTypeId
+    USING(MediaTypeId)
 INNER JOIN playlist_track
-    ON playlist_track.TrackId = tracks.TrackId
+    USING(TrackId)
 INNER JOIN playlists
-    ON playlists.PlaylistId = playlist_track.PlaylistId
+    USING(PlaylistId)
 WHERE 
     media_types.Name LIKE '%MPEG%'
     AND playlists.Name IN ('Brazilian Music', 'Grunge');

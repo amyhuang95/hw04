@@ -4,4 +4,4 @@ SELECT
     Name
 FROM albums
 LEFT JOIN artists
-    ON albums.ArtistId = artists.ArtistId;
+    USING(ArtistId);

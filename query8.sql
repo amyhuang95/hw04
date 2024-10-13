@@ -5,8 +5,8 @@ SELECT
     ROUND(SUM(tracks.Milliseconds)/3600000.0, 2) AS Hours
 FROM playlists
 LEFT JOIN playlist_track
-    ON playlist_track.PlaylistId = playlists.PlaylistId
+    USING(PlaylistId)
 LEFT JOIN tracks
-    ON playlist_track.TrackId = tracks.TrackId
+    USING(TrackId)
 GROUP BY playlists.PlaylistId
 HAVING Hours > 2;
